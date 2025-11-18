@@ -1,81 +1,66 @@
-📦 Product Card Grid — Next.js (Pages Router)
+# 📦 Product Card UI — Next.js (Pages Router)
 
-A clean, animated, responsive product grid built using Next.js 14(to make it compatible with all packages, lib, tools versions), React 18, Tailwind CSS, and Framer Motion — including:
+A clean, responsive, animation-rich product grid built with **Next.js 14 (Pages Router) (used older version for compatibility with packages, libs, tools)**, **React 18**, **Tailwind CSS**, and **Framer Motion**.  
+Includes a global cart system, theme toggling, accessibility features, and complete Jest testing setup.
 
-🛒 Add to Cart with Global Cart Context
+---
 
-🌗 Dark / Light Theme Toggle
+## 🚀 Features
 
-🎯 Accessible Buttons, ARIA Labels
+### 🛒 **Shopping Cart**
+- Global `CartProvider` using React Context  
+- Add to Cart, Buy Now, View More actions  
+- Live cart badge count in the header  
+- Updates instantly across components  
 
-💨 Smooth Animations
+---
 
-🖼 Image optimization via custom Next.js Image mock
+### 🌗 **Theme Toggle**
+- Dark/Light mode support  
+- Smooth transitions  
+- Uses `next-themes` for safe SSR hydration  
 
-🧪 Fully working Jest + React Testing Library setup
+---
 
-🔄 Reusable Card Components
+### 🎨 **Product Cards**
+- Fully responsive mobile-first design  
+- Framer Motion animations  
+- Image placeholder, rating, tags  
+- Three accessible CTA buttons  
 
-📱 Mobile-first design
+---
 
-🚀 Features
-🛒 Shopping Cart
+### 🧪 **Testing Setup**
+Fully configured Jest + RTL environment:
+- JSDOM test environment  
+- Babel transform for JSX/TSX  
+- Mocks for Next.js Image and static files  
+- Compatible with Tailwind & Framer Motion  
 
-Global CartProvider using React Context
+---
 
-Add to Cart, Buy Now, View More buttons
+## 🛠️ Tech Stack
 
-Persistent badge count in Cart Icon
+| Layer | Technology |
+|-------|------------|
+| Framework | Next.js 14 (Pages Router) |
+| UI | React 18 |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion |
+| State | React Context (CartProvider) |
+| Testing | Jest + React Testing Library |
+| Language | TypeScript |
 
-🌗 Theme Toggle
+---
 
-Dark/light mode with smooth transitions
+## 📂 Folder Structure
 
-Uses next-themes
-
-🖼 ProductCard Component
-
-Framer-motion animations
-
-Three CTA buttons
-
-Mobile-optimized layout
-
-🧪 Testing
-
-Includes working Jest setup:
-
-Jest
-
-React Testing Library
-
-Babel transform for JSX
-
-JSDOM environment
-
-Next.js Image mock
-
-Framer Motion safe render
-
-🛠 Tech Stack
-
-Next.js 14 (Pages Router)
-
-React 18
-
-Tailwind CSS v4
-
-Framer Motion
-
-Jest + RTL
-
-TypeScript
-
-📂 Project Structure
-product-card-pages/
+```txt
+[product-card-pages/
 ├── pages/
 │   ├── index.tsx
-│   └── api/products.ts
+│   └── api/
+│       └── products.ts
 ├── components/
 │   ├── CartProvider.tsx
 │   ├── CartIcon.tsx
@@ -88,9 +73,13 @@ product-card-pages/
 ├── __mocks__/
 │   ├── nextImageMock.js
 │   └── fileMock.js
-├── public/images/
+├── public/
+│   └── images/
 ├── jest.config.js
 ├── babel.config.js
 ├── tailwind.config.js
 ├── tsconfig.json
 └── README.md
+]
+
+
